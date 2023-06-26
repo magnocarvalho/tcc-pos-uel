@@ -67,7 +67,7 @@ Diante desses desafios, este artigo propõe uma arquitetura de software voltada 
 
 O arranjo de Pagamentos Instantâneos (PIX) foi lançado pelo Banco Central do Brasil com o objetivo de modernizar o sistema de pagamentos no país. Ele representa uma mudança significativa na forma como as transações financeiras são realizadas, permitindo transferências instantâneas entre contas bancárias de diferentes instituições, a qualquer hora do dia e todos os dias da semana. O PIX utiliza tecnologias avançadas, como a utilização de chaves de identificação, QR codes e integração com outros serviços financeiros, proporcionando uma experiência de pagamento rápida, segura e conveniente \cite{de2023estado}.
 
-Desde o seu lançamento em novembro de 2020, o PIX tem ganhado uma adoção impressionante em todo o Brasil. Os usuários foram rápidos em aderir a esse novo meio de pagamento, reconhecendo os benefícios oferecidos em comparação aos métodos tradicionais, como boletos bancários e transferências TED/DOC. A possibilidade de realizar transações instantâneas, sem limitações de horário ou dias úteis, e com baixos custos tem impulsionado a utilização do PIX por empresas, estabelecimentos comerciais e pessoas físicas \cite{alexandre_rebêlo_ferreira_2022}.
+Desde o seu lançamento em novembro de 2020, o PIX tem ganhado uma adoção impressionante em todo o Brasil. Os usuários foram rápidos em aderir a esse novo meio de pagamento, reconhecendo os benefícios oferecidos em comparação aos métodos tradicionais, como boletos bancários e transferências TED/DOC. A possibilidade de realizar transações instantâneas, sem limitações de horário ou dias úteis, e com baixos custos tem impulsionado a utilização do PIX por empresas, estabelecimentos comerciais e pessoas físicas \cite{alexandre_rebelo_ferreira_2022}.
 
 \subsection{Motivação e relevância do estudo}
 
@@ -77,7 +77,7 @@ A motivação deste estudo reside na necessidade de propor uma arquitetura de so
 
 Além disso, a relevância deste estudo está na contribuição para o avanço do conhecimento em arquitetura de software voltada para sistemas de pagamentos instantâneos. Ao propor uma arquitetura que aborda os requisitos específicos do PIX, este trabalho pode fornecer diretrizes e insights para instituições financeiras, desenvolvedores e pesquisadores interessados em melhorar a eficiência operacional de sistemas semelhantes.
 
-\section{Requisitos de desempenho e carga do Arranjo de PIX} \label{sec:firstpage}
+\section{Requisitos de desempenho e carga do Arranjo de PIX} \label{sec:requisitos}
 
 O sucesso do arranjo de PIX está diretamente relacionado ao seu desempenho e capacidade de lidar com altas cargas de transações. Como um sistema de pagamentos instantâneos, é crucial que o PIX atenda a requisitos de desempenho para garantir uma experiência rápida e eficiente aos usuários.
 
@@ -93,7 +93,7 @@ Os desafios de baixo desempenho e alta carga podem ter impactos significativos n
 
 Considerando esses requisitos e desafios, é essencial que os participantes do arranjo de PIX adotem uma arquitetura de software adequada que suporte os requisitos de desempenho e carga. A próxima seção explorará os fundamentos e tecnologias relevantes para construir uma arquitetura de software eficiente e escalável, capaz de suprir essas demandas e garantir a qualidade do serviço do PIX.
 
-\subsection{Desempenho exigido para um sistema de pagamentos instantâneos}  \label{sec:firstpage}
+\subsection{Desempenho exigido para um sistema de pagamentos instantâneos}  \label{sec:desempenho:exigido}
 
 Um sistema de pagamentos instantâneos, como o arranjo de PIX, requer um desempenho excepcional para atender às expectativas dos usuários. A natureza instantânea das transações implica em tempos de resposta rápidos, garantindo que os pagamentos sejam processados de forma ágil e eficiente. Os requisitos de desempenho em um sistema de pagamentos instantâneos incluem:
 
@@ -205,11 +205,11 @@ Além disso, a adoção de arquiteturas distribuídas e a utilização de tecnol
 É importante destacar que a tolerância a falhas e a resiliência não se limitam apenas aos aspectos técnicos do sistema, mas também envolvem processos e procedimentos adequados. Os participantes do PIX devem estabelecer políticas de segurança e privacidade, além de treinamentos regulares para os colaboradores, visando a garantir a integridade e a disponibilidade das transações.
 
 Ao incorporar a tolerância a falhas e a resiliência em sua arquitetura de software, os participantes do arranjo de PIX podem mitigar os riscos de interrupções e garantir a continuidade das operações, mesmo em situações adversas. Isso contribui para a confiança e a segurança dos usuários, fortalecendo a reputação do arranjo de PIX como um meio de pagamento confiável e robusto.
-\subsection{Otimização de recursos} \label{sec:tecnologia}
+\subsection{Otimização de recursos} \label{subsec:tecnologia}
 
 \section{Proposta de Arquitetura de Software para o Arranjo de PIX} \label{sec:proposta}
-\subsection{Visão geral da arquitetura proposta} \label{sec:proposta}
-\subsection{Componentes principais e suas interações} \label{sec:proposta}
+\subsection{Visão geral da arquitetura proposta} \label{subsec:proposta}
+\subsection{Componentes principais e suas interações} \label{subsec:proposta}
 \subsection{Distribuição de carga e balanceamento de recursos} \label{sec:proposta}
 \subsection{Estratégias de escalabilidade e resiliência} \label{sec:proposta}
 \subsection{Implementação e integração com os participantes do PIX} \label{sec:proposta}
